@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Portfolio Tailwind - Abiatama</title>
     <link href="dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     
@@ -26,7 +27,7 @@
                     <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a>
+                                <a href="#hero" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a>
                             </li>
                             <li class="group">
                                 <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Tentang Saya</a>
@@ -289,6 +290,14 @@
         </div>
     </footer>
     <!-- Footer Secton End -->
+
+    <!-- Back to top start -->
+
+    <a href="#hero" class="hidden fixed justify-center items-center bottom-4 right-4 z-[9999] h-14 w-14 rounded-full bg-primary p-4 hover:animate-pulse" id="to-top">
+        <span class="block h-5 w-5 border-t-2 border-l-2 rotate-45 mt-2"></span>
+    </a>
+
+    <!-- Back to top end -->
 
     <script src="dist/js/script.js"></script>
 </body>
